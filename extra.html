@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            margin: 0 auto;
+        }
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .heart:before {
+            border-radius: 50px 50px 0 0;
+        }
+        .heart:after {
+            left: 0;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+        <div class="text">Sorry</div>
+    </div>
+</body>
+</html>

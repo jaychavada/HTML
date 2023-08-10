@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travel form for trip</h1>
+        <!-- form is used to collect input from the user -->
+        <form action="from.php">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your Name"><br>
+            <label for="sectionida">
+                <input type="radio" value="section a" name="section" id="sectionid">Section A
+            </label><br>
+            <label for="sectionidb">
+                <input type="radio" value="section b" name="section" id="sectionid">Section B
+            </label><br>
+            <label for="sectionidc">
+                <input type="radio" value="section c" name="section" id="sectionid">Section C
+            </label><br>
+            <label for="sectionidd">
+                <input type="button" value="section d"name="section" id="sectionid">
+            </label>
+            <br>
+            <input type="checkbox" id="foodbill">
+            <label for="foodbill">Want food bill</label><br>
+            <label for="Justify Your answer">Justify Your answer here</label>
+            <textarea name="explain" id="explain" cols="30" rows="10"
+                placeholder="Explaination about your answer"></textarea>
+
+            <!-- select element use to give optional funcitonal -->
+            <select name="books" id="books">
+                <option value="no-books">select books</option>
+                <option value="book1">Rich dad poor dad</option>
+                <option value="book2">Descendents of the sun</option>
+                <option value="book3">The Alchemist</option>
+            </select>
+            <select name="author" id="author">
+                <option value="no-author">select your author</option>
+                <option value="abc">abc</option>
+                <option value="xyz">xyz</option>
+                <option value="qqwe">qqwe</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
